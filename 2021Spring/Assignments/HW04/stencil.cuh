@@ -7,9 +7,9 @@
 // Each thread should compute _one_ element of output.
 // Shared memory should be allocated _dynamically_ only.
 //
-// image is an array of length n of managed memory.
-// mask is an array of length (2 * R + 1) of managed memory.
-// output is an array of length n of managed memory.
+// image is an array of length n.
+// mask is an array of length (2 * R + 1).
+// output is an array of length n.
 //
 // Assumptions:
 // - 1D configuration
@@ -21,10 +21,6 @@
 // - The output image elements corresponding to the given block before it is written back to global memory
 __global__ void stencil_kernel(const float* image, const float* mask, float* output, unsigned int n, unsigned int R);
 
-// Computes the convolution of image and mask, storing the result in output.
-// image is an array of length n of managed memory.
-// mask is an array of length (2 * R + 1) of managed memory.
-// output is an array of length n of managed memory.
 // Makes one call to stencil_kernel with threads_per_block threads per block.
 // The kernel call should be followed by a call to cudaDeviceSynchronize for timing purposes.
 //
