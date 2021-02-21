@@ -6,7 +6,6 @@
 
 ---
 ## C
----
 
 #### Compiler
 A tool which converts human-readable source code into a representation closer to [machine code](#machine-code).
@@ -14,7 +13,6 @@ A tool which converts human-readable source code into a representation closer to
 
 ---
 ## H
----
 
 #### High Performance Computing
 A computing discipline which relies on the combination of computing resources to achieve performance greater than that of a conventional computer. It may also refer to the practices leveraged to achieve such performance. _Compare_ [_HTC_](#htc).
@@ -25,7 +23,6 @@ Acronym. _See_ [_**H**igh **P**erformance **C**omputing_](#high-performance-comp
 
 ---
 ## I
----
 
 #### Instruction
 The binary representation of a single action which can be completed by a processor. _See also_ [_CISC_](#cisc), [_RISC_](#risc).
@@ -33,7 +30,6 @@ The binary representation of a single action which can be completed by a process
 
 ---
 ## M
----
 
 #### Machine Code
 The binary representation of a computer's [instructions](#instruction) which can be understood by a processor.
@@ -41,7 +37,6 @@ The binary representation of a computer's [instructions](#instruction) which can
 
 ---
 ## S
----
 
 #### Supercomputing
 The process of using a [supercomputer](#supercomputer) to meet computing goals. _Related to_ [_HPC_](#HPC) _and_ [_HTC_](#HTC).
