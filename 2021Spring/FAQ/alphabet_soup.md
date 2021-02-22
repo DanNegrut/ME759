@@ -22,7 +22,7 @@ Another name for a [Streaming Processor](#streaming-processor).
 ## D
 
 #### D$ (_cache_)
-Abbreviation for **D**ata [**Cache**](#cache). _See also [$](#cache-abbr)_.
+Abbreviation for **D**ata [**Cache**](#cache). _See also [$](#-cache-abbr)_.
 
 
 ---
@@ -58,7 +58,7 @@ Acronym. _See_ [_**H**igh **P**erformance **C**omputing_](#high-performance-comp
 ## I
 
 #### I$ (_cache_)
-Abbreviation for **I**nstruction [**Cache**](#cache). _See also [$](#cache-abbr)_.
+Abbreviation for **I**nstruction [**Cache**](#cache). _See also [$](#-cache-abbr)_.
 
 #### Instruction
 The binary representation of a single action which can be completed by a processor. _See also_ [_CISC_](#cisc), [_RISC_](#risc).
