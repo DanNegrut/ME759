@@ -51,7 +51,13 @@ A type of high-speed [DRAM](#dram) which uses 3D-stacked memory dies to achieve 
 A computing discipline which relies on the combination of computing resources to achieve performance greater than that of a conventional computer. It may also refer to the practices leveraged to achieve such performance. _Compare_ [_HTC_](#htc).
 
 #### HPC
-Acronym. _See_ [_**H**igh **P**erformance **C**omputing_](#high-performance-computing).
+Acronym. _See [**H**igh **P**erformance **C**omputing](#high-performance-computing)_.
+
+#### HTT
+Acronym. _See [**H**yper-**T**hreading **T**echnology](#hyper-threading-technology)_.
+
+#### Hyper-threading Technology
+Intel's proprietary implementation of [SMT](#SMT).
 
 
 ---
@@ -60,9 +66,14 @@ Acronym. _See_ [_**H**igh **P**erformance **C**omputing_](#high-performance-comp
 #### I$ (_cache_)
 Abbreviation for **I**nstruction [**Cache**](#cache). _See also [$](#-cache-abbr)_.
 
+#### ILP
+Acronym. _See [**I**nstruction-**L**evel **P**arallelism](#instruction-level-parallelism)_.
+
 #### Instruction
 The binary representation of a single action which can be completed by a processor. _See also_ [_CISC_](#cisc), [_RISC_](#risc).
 
+#### Instruction-level Parallelism
+A form of [parallelism](#parallelism) in which a processor is able to execute more than one [instruction](#instruction) simultaneously. Modern [superscalar](#superscalar) processors do this transparently.
 
 ---
 ## M
@@ -80,6 +91,9 @@ Acronym. _See [**S**ingle **I**nstruction, **M**ultiple **D**ata](#single-instru
 #### SIMT
 Acronym. _See [**S**ingle **I**nstruction, **M**ultiple **T**hreads](#single-instruction-multiple-threads)_.
 
+#### Simultaneous Multithreading
+A CPU feature in which a single [superscalar](#superscalar) processing element executes [instructions](#instruction) from multiple independent threads in order to better saturate the available execution resources.
+
 #### Single Instruction, Multiple Data
 An execution model in which a single [instruction](#instruction) operates on multiple lanes of incoming data. _Related to [Vectorization](#vectorization) and [SIMT](#simt)_. _See also [SISD](#sisd) and [MPMD](#mpmd)_.
 
@@ -88,6 +102,9 @@ A variant of the [SIMD](#simd) execution model in which multiple threads execute
 
 #### SM
 Acronym. _See [**S**treaming **M**ultiprocessor](#streaming-multiprocessor)_.
+
+#### SMT
+Acronym. _See [**S**imultaneous **M**ulti**T**hreading](#simultaneous-multithreading)_.
 
 #### SP
 Acronym. _See [**S**treaming **P**rocessor](#streaming-processor)_.
@@ -103,4 +120,20 @@ The process of using a [supercomputer](#supercomputer) to meet computing goals. 
 
 #### Supercomputer
 A collection of individual computing resources which are connected such that they can behave as a single computer.
+
+#### Superscalar
+A term describing a processor [architecture](#architecture) which is able to execute more than one [instruction](#instruction) per clock cycle. This is usually implemented by sending different instructions to each execution unit within a single processing element (e.g. Integer [ALU](#alu) + Floating Point ALU).
+
+
+---
+## T
+
+#### Task Parallelism
+A type of [parallelism](#parallelism) which involves the simultaneous execution of computational tasks on multiple execution resources. The [instructions](#instruction) performed may be different or the same between tasks, and the data operated on by the task may be different or the same.
+
+#### Thread-level Parallelism
+An implementation of [task parallelism](#task-parallelism) which is achieved when multiple hardware threads execute streams of [instructions](#instruction) at the same time.
+
+#### TLP
+Acronym. _See [**T**hread-**L**evel **P**arallelism]_.
 
