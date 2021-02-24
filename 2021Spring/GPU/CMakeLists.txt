@@ -20,4 +20,6 @@ add_executable(unifMemCUDAexPart3 unifMemCUDAexPart3.cu)
 
 add_executable(hwCoherency hwCoherency.cu)
 
+add_executable(stencil1D stencil1D.cu)
+
 add_subdirectory(kernelWrapper)
