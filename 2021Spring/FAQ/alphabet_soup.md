@@ -10,9 +10,15 @@
 #### $ (_cache abbr_.)
 The dollar sign character is sometimes used as an abbreviation for ["cache"](#cache). This originates from the similarity in English pronunciation between "cache" and "cash" (that is, money or currency).
 
+#### CC (_CUDA_)
+Acronym. _See [**C**ompute **C**apability](#compute-capability)_.
+
 
 #### Compiler
 A tool which converts human-readable source code into a representation closer to [machine code](#machine-code).
+
+#### Compute Capability
+A numeric identifier for the set of computational hardware features that a CUDA GPU supports. Newer GPUs have a higher CC, but can typically execute programs compiled for a lower CC.
 
 #### CUDA Core
 Another name for a [Streaming Processor](#streaming-processor).
