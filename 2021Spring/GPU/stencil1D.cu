@@ -1,4 +1,4 @@
-#include "math.h"
+#include <stdlib.h>
 #include "cuda.h"
 #include <iostream>
 
@@ -6,13 +6,20 @@
 #define N 1000000
 
 void initializeWeights(float* weights) {
-    ;
+    weights[0] = 0.05f;
+    weights[1] = 0.10f;
+    weights[2] = 0.20f;
+    weights[3] = 0.30f;
+    weights[4] = 0.20f;
+    weights[5] = 0.10f;
+    weights[6] = 0.05f;
 }
 
 void initializeArray(float* in) {
-    ;
+    for (int i = 0; i < N; i++) {
+        in[i] = rand() % 10;
+    }
 }
-
 
 __global__ void applyStencil1D(int sIdx, int eIdx, const float* weights, float* in, float* out) {
     int i = sIdx + blockIdx.x * blockDim.x + threadIdx.x;
@@ -47,7 +54,7 @@ int main() {
     cudaMemcpy(d_weights, weights, wsize*sizeof(float), cudaMemcpyHostToDevice);
     cudaMemcpy(d_in, in, N*sizeof(float), cudaMemcpyHostToDevice);
 
-    applyStencil1D << <N / 512, 512 >> > (RADIUS, N - RADIUS, d_weights, d_in, d_out);
+    applyStencil1D <<<(N+511) / 512, 512 >>> (RADIUS, N - RADIUS, d_weights, d_in, d_out);
 
     cudaMemcpy(out, d_out, N*sizeof(float), cudaMemcpyDeviceToHost);
 
