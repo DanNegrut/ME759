@@ -31,7 +31,7 @@ After copying back the `outFileName.nsight-cuprof-report` file from Euler, you w
 After the installation, you could simply open the `outFileName.nsight-cuprof-report` file with Nsight Compute, and you should be all set.
 
 The following image demonstrates the profiling results of the `vectorAdd` kernel function we just profiled:
-![vectorAdd](https://github.com/DanNegrut/ME759/tree/main/2021Spring/FAQ/BestPractices/vecAdd_prof.png)
+![vectorAdd](vecAdd_prof.png?raw=true)
 
 
 
