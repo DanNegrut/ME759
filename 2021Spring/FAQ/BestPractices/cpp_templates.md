@@ -65,7 +65,7 @@ The C++ Standard Library makes extensive use of templates. It even provides a [s
 
 ### Templates with CUDA C++
 
-Templates are supported by the CUDA kernel dialect of C++. The presence of this feature enables CUB, a [header-only library](header-only-libraries) from Nvidia which contains acceleration primitives for use inside of kernels and device functions.
+Templates are supported by the CUDA kernel dialect of C++. The presence of this feature enables CUB, a [header-only library](#header-only-libraries) from Nvidia which contains acceleration primitives for use inside of kernels and device functions.
 
 The syntax for defining a template is the same in CUDA as it is in standard C++.
 ```c++
