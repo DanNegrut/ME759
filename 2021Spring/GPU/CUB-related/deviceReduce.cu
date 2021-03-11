@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <cub/util_allocator.cuh>
 #include <cub/device/device_reduce.cuh>
-#include "test/test_util.h"
+#include "cub/util_debug.cuh"
 using namespace cub;
 CachingDeviceAllocator  g_allocator(true);  // Caching allocator for device memory
 
