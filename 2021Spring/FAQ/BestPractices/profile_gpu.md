@@ -7,7 +7,7 @@ It's a kernel profiler for CUDA applications that comes with both the interactiv
 
 ### Profiling a GPU program on Euler
 
-We will use the `vector_addition.cu` code available at the [ME759 repo](https://github.com/DanNegrut/ME759/blob/main/2021Spring/GPU/vector_addition.cu) to demonstrate the profiling process. The following commands will be executed on Euler and should be included in a Slurm script.
+We will use the `vector_addition.cu` code available at the [ME759 repo](https://github.com/DanNegrut/ME759/blob/main/2021Spring/GPU/vector_addition.cu) to demonstrate the profiling process. The following commands will be executed on Euler and **all of them should be included in a Slurm script**.
 
 First, we will use a different CUDA version for the profiling task since CUDA 11 has dropped the support for the Pascal architecture. You will need to:
 
