@@ -10,6 +10,7 @@
 // Expected output:
 // values = [1, 2, 3, 5]
 // counts = [2, 1, 2, 1]
+#include <thrust/device_vector.h>
 void count(const thrust::device_vector<int>& d_in,
                  thrust::device_vector<int>& values,
                  thrust::device_vector<int>& counts);
